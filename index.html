@@ -33,9 +33,9 @@
                 var file = new FileReader();
                 file.onload = function(e) {
                     document.body.style.backgroundImage = `url('${e.target.result}')`;
-                    document.body.style.backgroundSize = 'cover';
-                    document.body.style.backgroundRepeat = "no-repeat";
-                    document.body.style.backgroundPosition = "center";
+                    document.body.style.backgroundSize = 'auto';
+                    document.body.style.backgroundRepeat = "repeat";
+                    document.body.style.backgroundPosition = "top left";
                 };
                 file.readAsDataURL(doc);
             }
